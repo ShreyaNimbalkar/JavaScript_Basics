@@ -1,1 +1,1 @@
-# project
+JavaScript Basics
