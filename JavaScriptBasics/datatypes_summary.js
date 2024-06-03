@@ -48,3 +48,36 @@ Object = (native or host and does implement [[Call]])	"function"
 Object = (host and does not implement [[Call]])	Implementation-defined except may not be "undefined", "boolean", "number", or "string". */
 
 //https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//*****************************************************************************************
+
+//Stack and Heap memory in JavaScript
+
+/*stack memory is used in "primitive datatypes" and heap memory is used in "non-primitive datatypes" */
+
+//when you use stack memory then you get a copy of your variable
+//when you use heap memory then you get reference of original value what you will change it will change in original memory
+
+let myDogName = "Bruno";
+
+let anotherName = myDogName;
+anotherName = "Moti";
+
+console.log(myDogName);
+console.log(anotherName);
+/*We get the different values because in stack memory it gives us a copy of a variable to make changes but it does not change the orginal value*/
+
+let userOne = {
+    email:"userone123@gmail.com",
+    age:22
+};
+
+let userTwo = userOne;
+userTwo.email = "usertwo321@gmail.com"; //in objects if we need to change the specific value we use ".valueName"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+// console.log(userTwo);
+
+/*We get the same value in userOne email and userTwo email because in heap memory it takes reference of original value and directly nake changes in original value */
