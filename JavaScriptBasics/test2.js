@@ -1,12 +1,12 @@
 // //https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion 
 // //why string to number conversion is confusing
 // //basic operations
-// console.log(2+2);
-// console.log(2-2);
-// console.log(2*2);
-// console.log(2**3);
-// console.log(2/2);
-// console.log(2%3);
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**3);
+console.log(2/2);
+console.log(2%3);
 
 // //concatination of two strings
 // let str1 = "hello";
