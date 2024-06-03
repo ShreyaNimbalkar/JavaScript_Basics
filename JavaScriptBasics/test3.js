@@ -22,3 +22,4 @@
 
 //strict check === it will not only check values but also datatype
 console.log("2"===2); // in this case it will check datatypes and print false
+
